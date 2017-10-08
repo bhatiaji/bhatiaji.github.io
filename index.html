@@ -34,6 +34,17 @@
                         }
                     else
                     {
+                    var audio = new Audio("audio/sound.mp3" ) ;
+
+                    audio.oncanplaythrough = function(){
+                        audio.play();
+                    }
+
+                    audio.loop = true;
+
+                        audio.onended = function(){
+                            audio.play();
+                        }
                     $("#myInput").hide(2000);
                     $("#wisher").html("<h1 style='color:white' font-family:cursive; class='text-center'><b>~~~~~~ From: "+$("#name").val()+" ~~~~~~</b></h1>")    ;
                     $("#WishingDivision").show(2000);
