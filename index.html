@@ -1,0 +1,121 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <title>Happy Diwali</title>
+        <style>
+            body{
+                background-image: url(images/diya.jpg);
+            }
+        </style>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+                $("#WishingDivision").hide();
+                var ar=new Array();
+                ar[0]="#00695C";
+                ar[1]="#43A047";
+                ar[2]="#FFE082";
+                ar[3]="#FF7043";
+                ar[4]="#FFFF00";
+                ar[5]="#512DA8";
+                $("#submit").click(function(){
+                    if($("#name").val()=="")
+                        {
+                            alert("Enter the name");
+                        }
+                    else
+                    {
+                    $("#myInput").hide(2000);
+                    $("#wisher").html("<h1 style='color:white' font-family:cursive; class='text-center'><b>~~~~~~ From: "+$("#name").val()+" ~~~~~~</b></h1>")    ;
+                    $("#WishingDivision").show(2000);
+                        var i=0;
+                    while(i<=5)
+                        {
+                    $("#firstheading").hide(200);
+                    $("#firstheading").show(200);  
+                            
+                            i++;
+                        }
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <center>
+        <P>
+            <div id="Main" class="container">
+                <div id="myInput">
+                    <div class="row">
+                        <div class="col-sm-4">
+                        </div>
+                            <div class="col-sm-4">
+                               <form>
+                                    <div class="form-group">
+                                        <label for="text" style="color:white;">Enter Name:</label>
+                                        <input type="text" class="form-control" id="name">
+                                   </div>
+  
+                                   <a href="#" id="submit" style="text-decoration: none;" ><h2 style="color:white; font-family: fantasy;"> Submit</h2> </a>
+                                </form>
+                            </div>
+                        
+                        <div class="col-sm-4"></div>
+                    </div>
+                </div>
+                
+                
+                    <div id="WishingDivision">
+                        <div class="row">
+                            <div class="col-sm-12"><P><h1 style="color: white; font-family: fantasy;" id="firstheading"><b>Wishing you and Your Family</b></h1></P></div>
+                        </div> 
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="images/ptaka.gif" class="img-responsive">
+                            </div>
+                            <div class="col-sm-4"><P><br><br><br><h1 style="color:darkseagreen;font-family: cursive; font-size: 420%;" id="firstheading"><b>Happy<br>Diwali</b></h1></P></div>
+                            <div class="col-sm-4">
+                                <img src="images/ptaka.gif" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12" id="wisher">
+                            
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <img src="images/ptaka2.gif" class="img-responsive" height="200px" width="200px">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="images/ptaka2.gif" class="img-responsive" height="200px" width="200px">
+                            </div>
+                            <div class="col-sm-4">
+                                <P><h1 style="color:white; font-size: 400%;" class="text-center">ਆ ਗਯਾ ਦੀਵਾਲੀ ਵਾਲਾ ਟੈਮ</h1></P>
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="images/ptaka2.gif" class="img-responsive" height="200px" width="200px">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+                
+        </P>
+        </center>
+    </body>
+</html>
+
+
+ 
